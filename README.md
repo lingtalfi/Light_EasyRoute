@@ -53,11 +53,15 @@ easy_route:
 # --------------------------------------
 # hooks
 # --------------------------------------
-$initializer.methods_collection:
+$events.methods_collection:
     -
-        method: registerInitializer
+        method: registerListener
         args:
-            initializer: @service(easy_route)
+            events: Light.Light.initialize_1
+            listener:
+                instance: @service(easy_route)
+                callable_method: initialize
+
 
 ```
 
@@ -72,6 +76,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.2.1 -- 2019-12-17
+
+    - forgot to update README.md
+    
 - 1.2.0 -- 2019-12-17
 
     - update plugin to accommodate Light 0.50 initialization system
