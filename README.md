@@ -57,10 +57,11 @@ $events.methods_collection:
     -
         method: registerListener
         args:
-            events: Light.Light.initialize_1
+            events: Light.initialize_1
             listener:
                 instance: @service(easy_route)
                 callable_method: initialize
+
 
 
 ```
@@ -76,6 +77,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.2.2 -- 2019-12-17
+
+    - fix functional typo in service configuration
+    
 - 1.2.1 -- 2019-12-17
 
     - forgot to update README.md
