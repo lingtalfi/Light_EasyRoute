@@ -72,6 +72,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.2.0 -- 2019-12-17
+
+    - update plugin to accommodate Light 0.50 initialization system
+    
 - 1.1.0 -- 2019-09-10
 
     - update service instantiation to accommodate the new initializer interface
