@@ -1,31 +1,35 @@
 1.0.0: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.1.0: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.2.0: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.2.1: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.2.2: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.2.3: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.2.4: 
-    - Ling:BabyYaml:1.7.4
-    - Ling:Light:0.69.17
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
 
 1.2.5: 
-    - Ling:BabyYaml:1.7.5
-    - Ling:Light:0.69.18
+    - Ling:BabyYaml:1.7.5+
+    - Ling:Light:0.69.18+
+
+1.3.0: 
+    - Ling:BabyYaml:1.7.7+
+    - Ling:Light:0.69.25+

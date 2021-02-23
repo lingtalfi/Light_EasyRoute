@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2020-12-01
+2019-08-21 -> 2021-02-23
 
 
 
@@ -77,9 +77,13 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.0 -- 2021-02-23
+
+    - implement open registration system
+  
 - 1.2.5 -- 2020-12-08
 
-    - Fix lpi-deps not using natsort.
+    - Fix lpi-deps not using natsort
 
 - 1.2.4 -- 2020-12-04
 

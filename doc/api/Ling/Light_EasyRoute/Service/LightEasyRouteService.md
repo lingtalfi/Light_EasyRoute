@@ -4,7 +4,7 @@
 
 The LightEasyRouteService class
 ================
-2019-08-21 --> 2020-12-08
+2019-08-21 --> 2021-02-23
 
 
 
@@ -31,6 +31,7 @@ class <span class="pl-k">LightEasyRouteService</span>  {
     - public [__construct](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/__construct.md)() : void
     - public [initialize](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/initialize.md)(Ling\Light\Events\LightEvent $event) : void
     - public [registerBundleFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/registerBundleFile.md)(string $bundleFile) : void
+    - private [registerRouteByBundle](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/registerRouteByBundle.md)(string $bundleName, array $bundle, Ling\Light\Core\Light $light) : void
 
 }
 
@@ -56,6 +57,7 @@ Methods
 - [LightEasyRouteService::__construct](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/__construct.md) &ndash; Builds the LightEasyRouteService instance.
 - [LightEasyRouteService::initialize](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/initialize.md) &ndash; Listener for the [Light.initialize_1 event](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/events.md).
 - [LightEasyRouteService::registerBundleFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/registerBundleFile.md) &ndash; Adds a bundle file.
+- [LightEasyRouteService::registerRouteByBundle](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Service/LightEasyRouteService/registerRouteByBundle.md) &ndash; Register the routes from the given bundle to the light instance.
 
 
 
@@ -70,4 +72,4 @@ See the source code of [Ling\Light_EasyRoute\Service\LightEasyRouteService](http
 
 SeeAlso
 ==============
-Previous class: [LightEasyRouteException](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Exception/LightEasyRouteException.md)<br>
+Previous class: [LightEasyRouteHelper](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper.md)<br>
