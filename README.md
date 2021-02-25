@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-02-23
+2019-08-21 -> 2021-02-25
 
 
 
@@ -77,6 +77,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.1 -- 2021-02-25
+
+    - update service->registerRouteByBundle, now trim trailing slashes of the route patterns
+  
 - 1.3.0 -- 2021-02-23
 
     - implement open registration system

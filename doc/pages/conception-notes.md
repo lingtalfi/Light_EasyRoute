@@ -1,6 +1,6 @@
 Light_EasyRoute, conception notes
 =================
-2019-08-21 -> 2021-02-23
+2019-08-21 -> 2021-02-25
 
 
 Plugins sometimes need to register their own routes.
@@ -75,6 +75,26 @@ Each bundle has the following entries:
 The plugin file's location must be at:
 
 - config/data/$PluginName/Light_EasyRoute/routes.byml
+
+
+
+
+Trailing slashes
+---------------
+2021-02-25
+
+When our service registers a route to the light instance, it makes sure that the route pattern doesn't end with a slash.
+
+We do this in order to maximize the chances of routes matching the intent of the route's creator, so for instance
+the pattern "/admin/" will match not only the "/admin/" url, but also the "/admin" url.
+
+
+
+
+
+
+
+
 
 
 
