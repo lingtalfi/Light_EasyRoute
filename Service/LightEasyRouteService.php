@@ -7,8 +7,10 @@ namespace Ling\Light_EasyRoute\Service;
 use Ling\BabyYaml\BabyYamlUtil;
 use Ling\Light\Core\Light;
 use Ling\Light\Events\LightEvent;
+use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_EasyRoute\Exception\LightEasyRouteException;
 use Ling\Light_EasyRoute\Helper\LightEasyRouteHelper;
+use Ling\Light_Vars\Service\LightVarsService;
 
 /**
  * The LightEasyRouteService class.
@@ -27,11 +29,29 @@ class LightEasyRouteService
 
 
     /**
+     * This property holds the container for this instance.
+     * @var LightServiceContainerInterface|null
+     */
+    protected ?LightServiceContainerInterface $container;
+
+
+    /**
      * Builds the LightEasyRouteService instance.
      */
     public function __construct()
     {
+        $this->container = null;
         $this->bundleFiles = [];
+    }
+
+    /**
+     * Sets the container.
+     *
+     * @param LightServiceContainerInterface $container
+     */
+    public function setContainer(LightServiceContainerInterface $container)
+    {
+        $this->container = $container;
     }
 
 
@@ -47,6 +67,12 @@ class LightEasyRouteService
     {
         $light = $event->getLight();
         $appDir = $light->getContainer()->getApplicationDir();
+
+
+        /**
+         * @var $va LightVarsService
+         */
+        $va = $this->container->get("vars");
 
 
         //--------------------------------------------
@@ -77,6 +103,10 @@ class LightEasyRouteService
                 return (int)($arr1["priority"] > $arr2['priority']);
             });
             foreach ($arr as $bundleName => $bundle) {
+
+                if (array_key_exists("prefix", $bundle)) {
+                    $bundle['prefix'] = $va->resolveContainerNotation($bundle['prefix']);
+                }
                 $this->registerRouteByBundle($bundleName, $bundle, $light);
             }
         }
@@ -108,6 +138,7 @@ class LightEasyRouteService
      */
     private function registerRouteByBundle(string $bundleName, array $bundle, Light $light)
     {
+
         $prefix = $bundle['prefix'] ?? null;
         $routes = $bundle['routes'];
         foreach ($routes as $routeId => $route) {

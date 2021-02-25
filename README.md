@@ -47,20 +47,23 @@ Here is an example of the service configuration file:
 
 ```yaml
 easy_route:
-    instance: Ling\Light_EasyRoute\Service\LightEasyRouteService
+  instance: Ling\Light_EasyRoute\Service\LightEasyRouteService
+  methods:
+    setContainer:
+      container: @container()
 
 
 # --------------------------------------
 # hooks
 # --------------------------------------
 $events.methods_collection:
-    -
-        method: registerListener
-        args:
-            events: Light.initialize_1
-            listener:
-                instance: @service(easy_route)
-                callable_method: initialize
+  -
+    method: registerListener
+    args:
+      events: Light.initialize_1
+      listener:
+        instance: @service(easy_route)
+        callable_method: initialize
 
 
 
@@ -77,6 +80,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.2 -- 2021-02-25
+
+    - update service, now prefix can use container notation to access light vars
+  
 - 1.3.1 -- 2021-02-25
 
     - update service->registerRouteByBundle, now trim trailing slashes of the route patterns

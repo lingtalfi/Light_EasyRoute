@@ -32,7 +32,7 @@ Following these steps will add your plugin's routes to the [master route declara
 
 The plugin's routes declaration file 
 ------------
-2021-02-23
+2021-02-23 -> 2021-02-25
 
 
 The plugin's routes declaration file has a structure similar to this:
@@ -60,7 +60,8 @@ A typical plugin would declare only one bundle named after the plugin (tip: use 
 
 Each bundle has the following entries:
 
-- ?**prefix**: string=null, allows you to specify a string which will be prepended to every route's pattern in the bundle
+- ?**prefix**: string=null, allows you to specify a string which will be prepended to every route's pattern in the bundle.
+        It's possible to access [light vars](https://github.com/lingtalfi/Light_Vars/blob/master/doc/pages/conception-notes.md#light-variables) via [container notation](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/notation/container-notation.md).
 - ?**priority**: int=10, allows you to specify a positive arbitrary integer representing the priority. The smaller the number the sooner the route will be parsed.
     The main idea behind this property is that sometimes there is a well known master/subscriber relationships between third-party plugins.
     When that's the case, it's likely that the routes defined by the master plugin need to be parsed BEFORE the ones from the subscriber plugins.
