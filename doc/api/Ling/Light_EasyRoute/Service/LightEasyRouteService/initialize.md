@@ -55,7 +55,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightEasyRouteService::initialize](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Service/LightEasyRouteService.php#L66-L115)
+See the source code for method [LightEasyRouteService::initialize](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Service/LightEasyRouteService.php#L66-L117)
 
 
 See Also

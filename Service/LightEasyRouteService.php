@@ -105,7 +105,9 @@ class LightEasyRouteService
             foreach ($arr as $bundleName => $bundle) {
 
                 if (array_key_exists("prefix", $bundle)) {
-                    $bundle['prefix'] = $va->resolveContainerNotation($bundle['prefix']);
+                    if (null !== $bundle['prefix']) {
+                        $bundle['prefix'] = $va->resolveContainerNotation($bundle['prefix']);
+                    }
                 }
                 $this->registerRouteByBundle($bundleName, $bundle, $light);
             }

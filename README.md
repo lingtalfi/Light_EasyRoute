@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-02-25
+2019-08-21 -> 2021-02-26
 
 
 
@@ -80,6 +80,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.3 -- 2021-02-26
+
+    - fix service->initialize type error when calling light vars service
+  
 - 1.3.2 -- 2021-02-25
 
     - update service, now prefix can use container notation to access light vars

@@ -49,7 +49,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightEasyRouteService::registerBundleFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Service/LightEasyRouteService.php#L123-L126)
+See the source code for method [LightEasyRouteService::registerBundleFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Service/LightEasyRouteService.php#L125-L128)
 
 
 See Also
