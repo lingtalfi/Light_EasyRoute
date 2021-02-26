@@ -82,12 +82,11 @@ The plugin file's location must be at:
 
 Trailing slashes
 ---------------
-2021-02-25
+2021-02-25 -> 2021-02-26
 
 When our service registers a route to the light instance, it makes sure that the route pattern doesn't end with a slash.
 
-We do this in order to maximize the chances of routes matching the intent of the route's creator, so for instance
-the pattern "/admin/" will match not only the "/admin/" url, but also the "/admin" url.
+We reckon that urls shouldn't generally end with a "slash" character, and so by removing the trailing slashes of the route patterns we believe we help the user a bit.
 
 
 

@@ -80,6 +80,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.4 -- 2021-02-26
+
+    - update doc, trailing slash section 
+
 - 1.3.3 -- 2021-02-26
 
     - fix service->initialize type error when calling light vars service
