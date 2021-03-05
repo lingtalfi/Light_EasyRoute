@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-02-26
+2019-08-21 -> 2021-03-05
 
 
 
@@ -14,6 +14,11 @@ This is part of the [universe framework](https://github.com/karayabin/universe-s
 
 Install
 ==========
+Using the [planet installer](https://github.com/lingtalfi/Light_PlanetInstaller) via [light-cli](https://github.com/lingtalfi/Light_Cli)
+```bash
+lt install Ling.Light_EasyRoute
+```
+
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
 uni import Ling/Light_EasyRoute
@@ -79,6 +84,10 @@ See the conception notes for more details.
 
 History Log
 =============
+
+- 1.3.5 -- 2021-03-05
+
+    - update README.md, add install alternative
 
 - 1.3.4 -- 2021-02-26
 
