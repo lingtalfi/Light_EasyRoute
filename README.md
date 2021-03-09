@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-03-05
+2019-08-21 -> 2021-03-09
 
 
 
@@ -85,6 +85,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.6 -- 2021-03-09
+
+    - update planet to adapt Ling.Light recommended app structure
+  
 - 1.3.5 -- 2021-03-05
 
     - update README.md, add install alternative
