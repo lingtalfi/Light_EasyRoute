@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-03-15
+2019-08-21 -> 2021-06-18
 
 
 
@@ -85,6 +85,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.10 -- 2021-06-18
+
+    - fix service->registerRouteByBundle converting pattern slash to empty string 
+  
 - 1.3.9 -- 2021-05-31
 
     - Removing trailing plus in lpi-deps file (to work with Light_PlanetInstaller:2.0.0 api
