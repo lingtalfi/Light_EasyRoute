@@ -26,6 +26,7 @@ class <span class="pl-k">LightEasyRouteHelper</span>  {
 
 - Methods
     - public static [guessRoutePrefix](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/guessRoutePrefix.md)(string $appDir, string $planetDotName) : string
+    - public static [writeRouteToPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/writeRouteToPluginFile.md)(string $appDir, string $planetDotName, string $routeName, array $route) : void
     - public static [getPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/getPluginFile.md)(string $appDir, string $planetDotName) : string
     - public static [copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/copyRoutesFromPluginToMaster.md)(string $appDir, string $subscriberPlanetDotName) : void
     - public static [removeRoutesFromMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/removeRoutesFromMaster.md)(string $appDir, string $subscriberPlanetDotName) : void
@@ -42,6 +43,7 @@ Methods
 ==============
 
 - [LightEasyRouteHelper::guessRoutePrefix](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/guessRoutePrefix.md) &ndash; A route prefix is a namespace that your planet uses to distinguish its routes from other planets' routes.
+- [LightEasyRouteHelper::writeRouteToPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/writeRouteToPluginFile.md) &ndash; Writes a route to the plugin file.
 - [LightEasyRouteHelper::getPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/getPluginFile.md) &ndash; Returns the expected plugin file for registering routes with our open registration system.
 - [LightEasyRouteHelper::copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/copyRoutesFromPluginToMaster.md) &ndash; Merges the planet's route declaration file (if it exists) into the master.
 - [LightEasyRouteHelper::removeRoutesFromMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/removeRoutesFromMaster.md) &ndash; Removes the planet's route declaration file (if it exists) into the master.

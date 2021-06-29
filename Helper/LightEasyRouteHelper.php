@@ -5,6 +5,7 @@ namespace Ling\Light_EasyRoute\Helper;
 
 
 use Ling\BabyYaml\BabyYamlUtil;
+use Ling\Bat\BDotTool;
 use Ling\Digger\DiggerTool;
 
 /**
@@ -42,6 +43,29 @@ class LightEasyRouteHelper
             $routePrefix = "$planetDotName-route-";
         }
         return $routePrefix;
+    }
+
+
+    /**
+     * Writes a route to the plugin file. If the route exists, it will be overwritten.
+     *
+     *
+     * @param string $appDir
+     * @param string $planetDotName
+     * @param string $routeName
+     * @param array $route
+     */
+    public static function writeRouteToPluginFile(string $appDir, string $planetDotName, string $routeName, array $route)
+    {
+        $pluginFile = self::getPluginFile($appDir, $planetDotName);
+        $arr = [];
+        if (true === file_exists($pluginFile)) {
+            $arr = BabyYamlUtil::readFile($pluginFile);
+        }
+        $bdotKey = BDotTool::escape($planetDotName) . ".routes." . BDotTool::escape($routeName);
+        BDotTool::setDotValue($bdotKey, $route, $arr);
+        BabyYamlUtil::writeFile($arr, $pluginFile);
+
     }
 
 

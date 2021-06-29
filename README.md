@@ -85,6 +85,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.13 -- 2021-06-29
+
+    - add LightEasyRouteHelper::writeRouteToPluginFile method 
+  
 - 1.3.12 -- 2021-06-29
 
     - add LightEasyRouteHelper::guessRoutePrefix method 
