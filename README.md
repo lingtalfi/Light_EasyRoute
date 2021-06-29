@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-06-18
+2019-08-21 -> 2021-06-29
 
 
 
@@ -85,6 +85,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.11 -- 2021-06-29
+
+    - add LightEasyRouteHelper::getPluginFile method 
+  
 - 1.3.10 -- 2021-06-18
 
     - fix service->registerRouteByBundle converting pattern slash to empty string 

@@ -14,6 +14,18 @@ class LightEasyRouteHelper
 
 
     /**
+     * Returns the expected plugin file for registering routes with our open registration system.
+     *
+     * @param string $appDir
+     * @param string $planetDotName
+     * @return string
+     */
+    public static function getPluginFile(string $appDir, string $planetDotName): string
+    {
+        return $appDir . "/config/data/$planetDotName/Ling.Light_EasyRoute/routes.byml";
+    }
+
+    /**
      * Merges the planet's route declaration file (if it exists) into the master.
      * See the @page(Light_EasyRoute conception notes) for more details.
      *
@@ -23,7 +35,7 @@ class LightEasyRouteHelper
      */
     public static function copyRoutesFromPluginToMaster(string $appDir, string $subscriberPlanetDotName)
     {
-        $pluginFile = $appDir . "/config/data/$subscriberPlanetDotName/Ling.Light_EasyRoute/routes.byml";
+        $pluginFile = self::getPluginFile($appDir, $subscriberPlanetDotName);
         if (true === file_exists($pluginFile)) {
             $arr = BabyYamlUtil::readFile($pluginFile);
 
