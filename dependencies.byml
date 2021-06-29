@@ -1,6 +1,7 @@
 dependencies: 
     Ling: 
         - BabyYaml
+        - Digger
         - Light
         - Light_Vars
     

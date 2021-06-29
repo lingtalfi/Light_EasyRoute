@@ -10,6 +10,7 @@ Table of contents
 
 - [LightEasyRouteException](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Exception/LightEasyRouteException.md) &ndash; The LightEasyRouteException class.
 - [LightEasyRouteHelper](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper.md) &ndash; The LightEasyRouteHelper class.
+    - [LightEasyRouteHelper::guessRoutePrefix](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/guessRoutePrefix.md) &ndash; A route prefix is a namespace that your planet uses to distinguish its routes from other planets' routes.
     - [LightEasyRouteHelper::getPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/getPluginFile.md) &ndash; Returns the expected plugin file for registering routes with our open registration system.
     - [LightEasyRouteHelper::copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/copyRoutesFromPluginToMaster.md) &ndash; Merges the planet's route declaration file (if it exists) into the master.
     - [LightEasyRouteHelper::removeRoutesFromMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/removeRoutesFromMaster.md) &ndash; Removes the planet's route declaration file (if it exists) into the master.
@@ -24,6 +25,7 @@ Table of contents
 Dependencies
 ============
 - [BabyYaml](https://github.com/lingtalfi/BabyYaml)
+- [Digger](https://github.com/lingtalfi/Digger)
 - [Light](https://github.com/lingtalfi/Light)
 - [Light_Vars](https://github.com/lingtalfi/Light_Vars)
 

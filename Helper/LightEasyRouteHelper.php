@@ -5,12 +5,44 @@ namespace Ling\Light_EasyRoute\Helper;
 
 
 use Ling\BabyYaml\BabyYamlUtil;
+use Ling\Digger\DiggerTool;
 
 /**
  * The LightEasyRouteHelper class.
  */
 class LightEasyRouteHelper
 {
+
+
+    /**
+     * A route prefix is a namespace that your planet uses to distinguish its routes from other planets' routes.
+     *
+     * This method returns a guess of what your route prefix should be, based on your planet name.
+     *
+     * Our heuristic is like this:
+     *
+     * - if there is a digger route_prefix information, we use it
+     * - else, we use the "$planetDotName-route-" string as a prefix
+     *
+     *
+     * Note that in general there is no special rules about the route prefix, it can be any string, so you can override our guess
+     * if you want.
+     *
+     *
+     *
+     * @param string $appDir
+     * @param string $planetDotName
+     * @return string
+     * @throws \Exception
+     */
+    public static function guessRoutePrefix(string $appDir, string $planetDotName): string
+    {
+        $routePrefix = DiggerTool::getValue($appDir, $planetDotName, "route_prefix");
+        if (null === $routePrefix) {
+            $routePrefix = "$planetDotName-route-";
+        }
+        return $routePrefix;
+    }
 
 
     /**

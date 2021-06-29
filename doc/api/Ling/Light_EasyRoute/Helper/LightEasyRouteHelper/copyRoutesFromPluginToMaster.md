@@ -59,7 +59,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightEasyRouteHelper::copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Helper/LightEasyRouteHelper.php#L36-L51)
+See the source code for method [LightEasyRouteHelper::copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Helper/LightEasyRouteHelper.php#L68-L83)
 
 
 See Also

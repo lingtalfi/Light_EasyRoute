@@ -53,7 +53,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [LightEasyRouteHelper::getPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Helper/LightEasyRouteHelper.php#L23-L26)
+See the source code for method [LightEasyRouteHelper::getPluginFile](https://github.com/lingtalfi/Light_EasyRoute/blob/master/Helper/LightEasyRouteHelper.php#L55-L58)
 
 
 See Also
@@ -61,5 +61,5 @@ See Also
 
 The [LightEasyRouteHelper](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper.md) class.
 
-Next method: [copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/copyRoutesFromPluginToMaster.md)<br>
+Previous method: [guessRoutePrefix](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/guessRoutePrefix.md)<br>Next method: [copyRoutesFromPluginToMaster](https://github.com/lingtalfi/Light_EasyRoute/blob/master/doc/api/Ling/Light_EasyRoute/Helper/LightEasyRouteHelper/copyRoutesFromPluginToMaster.md)<br>
 
