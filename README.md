@@ -1,6 +1,6 @@
 Light_EasyRoute
 ===========
-2019-08-21 -> 2021-06-29
+2019-08-21 -> 2021-07-27
 
 
 
@@ -85,6 +85,10 @@ See the conception notes for more details.
 History Log
 =============
 
+- 1.3.14 -- 2021-07-27
+
+    - add LightEasyRouteHelper::getMasterRelativePath method 
+  
 - 1.3.13 -- 2021-06-29
 
     - add LightEasyRouteHelper::writeRouteToPluginFile method 

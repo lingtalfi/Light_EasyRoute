@@ -137,6 +137,17 @@ class LightEasyRouteHelper
      */
     public static function getMasterPath(string $appDir): string
     {
-        return $appDir . "/config/open/Ling.Light_EasyRoute/routes.byml";;
+        return $appDir . "/" . self::getMasterRelativePath();
+    }
+
+    /**
+     * Returns the relative path (from the app root dir) to the master.
+     * See the @page(Light_EasyRoute conception notes) for more details.
+     *
+     * @return string
+     */
+    public static function getMasterRelativePath(): string
+    {
+        return "config/open/Ling.Light_EasyRoute/routes.byml";;
     }
 }
